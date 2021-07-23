@@ -8,6 +8,3 @@ Feature: Dashboard tab functionality
     Then verify the following tabs on dashboard
       |Admin|PIM|Leave|Time|Recruitment|Performance|Dashboard|Directory|
 
-    @Testing
-    Scenario:
-      When Testing

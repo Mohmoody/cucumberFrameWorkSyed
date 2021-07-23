@@ -24,6 +24,7 @@ public class CommonMethods {
         switch (ConfigReader.getPropertyValue("browser")){
             case "chrome":
                 //System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver.exe");
+                WebDriverManager.chromedriver().setup();
                 if(ConfigReader.getPropertyValue("headless").equals("true")){
                     ChromeOptions chromeOptions=new ChromeOptions();
                     chromeOptions.setHeadless(true);
@@ -32,7 +33,7 @@ public class CommonMethods {
                     driver=new ChromeDriver();
                 }
 
-                WebDriverManager.chromedriver().setup();
+
 
                 break;
             case "firefox":

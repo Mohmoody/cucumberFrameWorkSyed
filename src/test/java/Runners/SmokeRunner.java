@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/Login.feature",
+        features = "src/test/resources/features/Dashboard.feature",
         //glue is where we can find implementations for gherkin steps
         // we provide the path of package for steps
         glue = "steps",
